@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "My first project at Flatiron School – Job Search CLI program! "
-date:       2020-09-12 06:50:17 +0000
+date:       2020-09-12 02:50:18 -0400
 permalink:  my_first_project_at_flatiron_school_job_search_cli_program
 ---
 
