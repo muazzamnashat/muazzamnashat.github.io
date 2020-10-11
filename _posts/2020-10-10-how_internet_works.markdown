@@ -23,7 +23,7 @@ The features of this projects are:
 *  Latest news on stocks.
 *  Stock analysts' recommendation on stocks that user follow with some graphs.
 
-![](https://github.com/muazzamnashat/stocktracker/blob/main/public/for%20blog.png?raw=true)
+![](http://raw.githubusercontent.com/muazzamnashat/stocktracker/main/public/for%20blog.png)
 
 The most difficult part was planning the association between different classes and tables. Initially, I created 3 tables: Users, Stocks and a join table. My initial idea was that if I could share one stock instance between several users then I would not need to create same stock instance several times for several users. It will save memory. I had an MVP (Minimum Viable Product) ready pretty quickly and so started stretching features. I implemented a feature called ‘Note’ where users can stick notes to stocks. It would help them to plan when to buy or sell a stock. The feature was easy to implement but when I was testing the app, I realized that a user could change the note created by another user because there was only one stock with the specific name and several users could own that one stock! So, I kept only two table and allowed User class to have several stocks with the same name! Another tricky part was creating pie charts with stock recommendations but thanks to Finnhub API for their awesome documentation and easy to use API.
 
