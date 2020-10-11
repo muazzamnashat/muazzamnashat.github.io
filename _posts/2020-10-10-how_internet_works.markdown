@@ -15,13 +15,13 @@ The main focus of the project was building a web app quickly with CRUD (CREATE, 
 
 The features of this projects are:
 
-* User authentication (Signup / Login).
-* Uniqueness of user login attribute (username or email).
-* Validation of user input so bad data cannot be persisted to the database.
-* CRUD functionality.
-* Minimal design.
-* Latest news on stocks.
-* Stock analysts' recommendation on stocks that user follow with some graphs.
+*  User authentication (Signup / Login).
+*  Uniqueness of user login attribute (username or email).
+*  Validation of user input so bad data cannot be persisted to the database.
+*  CRUD functionality.
+*  Minimal design.
+*  Latest news on stocks.
+*  Stock analysts' recommendation on stocks that user follow with some graphs.
 
 ![](https://github.com/muazzamnashat/stocktracker/blob/main/public/for%20blog.png)
 
