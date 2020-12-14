@@ -16,41 +16,6 @@ However, another challenge was building a search button. I wanted to build a sea
 ![code snippet](https://raw.githubusercontent.com/muazzamnashat/yap-frontend/master/src/images/carbon%20(1).png)
 
 
-`let restaurant_names =[]
-  document.getElementById("search-bar").addEventListener("input", e => {
-    let result = [];
-    if (e.target.value.length > 3){
-        fetch(`${HOME_URL}businesses`)
-          .then(response => response.json())
-          .then(response => {
-            let resultDisplay = document.getElementById("search-result");
-              response.forEach(obj => {
-                let search_result_exist_in_db = obj.name.toLowerCase().indexOf(e.target.value) > -1;
-                let already_in_the_list = restaurant_names.includes(obj.name)
-                if ( search_result_exist_in_db && !already_in_the_list){
-                  result.push(obj);
-                  restaurant_names.push(obj.name);
-                  let node = document.createElement("a")
-                  node.setAttribute("href","#")
-                  node.setAttribute("class","list-group-item list-group-item-action")
-                  node.innerText = obj.name
-                  node.addEventListener("click", e => {
-                    document.getElementById("welcome-hdr").classList.remove("background");
-                    document.getElementById("search-bar").reset();
-                    Business.loadBusiness(obj);
-                  })
-                  if (resultDisplay.childNodes.length < 5) resultDisplay.appendChild(node)
-                }
-              })    
-          })
-      document.getElementById("search-bar").addEventListener("submit", e => {
-        displaySearchResult(result);
-        document.getElementById("search-bar").reset();
-        
-      })
-    }
-  })`
-
 Here, when the user type something on the search bar and the string is at least 3 character long, the frontend fires an API call and get all the restaurant list. Then, if the string matches with any restaurant name then that restaurant object is saved in an array. Then, another function is called to populate the result div. Although this might not be the most efficient search system as it keeps calling the API with every input but for the purpose of this small project, I did not spend much time on this feature. 
 
 The purpose of this project was to get students familiar with DOM manipulation with pure JavaScript. Although there are libraries in JS like React, to make things easier for developers, but before getting used to these libraries it was essential to understand how JS works with the DOM. The app definitely helped me understand JS better. 
