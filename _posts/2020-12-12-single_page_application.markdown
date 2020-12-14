@@ -12,6 +12,8 @@ The hardest part of the project was to get my head around the idea of SPA! I was
 
 However, another challenge was building a search button. I wanted to build a search button where users can type names and suggested results will keep popping up as they type. The function looks like this: 
 
+![](https://ibb.co/w436zXr)
+
 `let restaurant_names =[]
   document.getElementById("search-bar").addEventListener("input", e => {
     let result = [];
