@@ -12,7 +12,9 @@ The hardest part of the project was to get my head around the idea of SPA! I was
 
 However, another challenge was building a search button. I wanted to build a search button where users can type names and suggested results will keep popping up as they type. The function looks like this: 
 
-![](http://imgbb.com/)
+
+![code snippet](https://raw.githubusercontent.com/muazzamnashat/yap-frontend/master/src/images/carbon%20(1).png)
+
 
 `let restaurant_names =[]
   document.getElementById("search-bar").addEventListener("input", e => {
