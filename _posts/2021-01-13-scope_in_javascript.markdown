@@ -149,9 +149,9 @@ Here, innerMostFunction() has access to all the variables of its outer scopes. B
 
 To sum up the idea of scoping, we can say:
 
-•	Global scoped variables can be accessed from anywhere in the code base.
+*•	Global scoped variables can be accessed from anywhere in the code base.
 
 •	Block scopes variables are only accessible within the block.
 
-•	The variables of the outer scope are accessible inside the inner scope.
+•	The variables of the outer scope are accessible inside the inner scope.*
 
