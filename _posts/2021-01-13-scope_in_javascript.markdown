@@ -6,7 +6,7 @@ permalink:  scope_in_javascript
 ---
 
 
-If you are a beginner in JavaScript, it is really important to understand the concept of scope. It will save you a lot of time and hours of debugging. 
+If you are a beginner in JavaScript, it is really important to understand the concept of scope. It will save you hours of debugging. 
 
 Imagine you are chatting with two friends, A and B on Facebook. Whatever texts you send to A, B does not have access to that messages. Same goes for A. But if you create a group then everyone can see or have access to all the messages. This is because these chat windows have their own audiences or scopes. The same principal of scope exists in JS. Whether you will have access to a variable from a particular position in your code depends on the scope. Scope is created by functions and code blocks. 
 
