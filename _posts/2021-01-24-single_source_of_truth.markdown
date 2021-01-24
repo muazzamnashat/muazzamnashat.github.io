@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Single Source of truth"
-date:       2021-01-24 12:37:44 +0000
+date:       2021-01-24 07:37:44 -0500
 permalink:  single_source_of_truth
 ---
 
@@ -10,27 +10,34 @@ If you know the basics of React, then you are most probably familiar with the ke
 
 This is where *Redux* shines! It encourages a single source of truth by storing all the data in a single JavaScript object separated from all the components. And the best part is we can access the data from any component anytime just by connecting the component to the object which is called redux store! 
 
-How to setup your Redux store:
+Today, I'll walk you through on how to setup a Redux store in a React app. I'll assume you have already spinned up a react app with create-react-app. 
+
 
 1.	First we need to import ‘’createStore” method from the Redux library.  Before that we can need to install two packages `redux` and `react-redux` by running 
 `npm install redux && npm install react-redux`
 After the installation we can import createStore method from redux by
 
-`// ./src/index.js`
-`import { createStore } from 'redux';`
+```
+// ./src/index.js
+import { createStore } from 'redux';
+```
 
 Now we can create our Redux store by running this createStore method.
 
-`// ./src/index.js`
+```
+// ./src/index.js
 
-`const store = createStore(countReducer);`
+const store = createStore(countReducer);
+```
 
 We’ll get back to the countReducer in a bit. 
 
 2.	Now we need the store to be available to the whole application. To do that, we’ll need to import Provider component from `react-redux` and the Provider component will wrap our top-level component which is usually App.js. Then, the App or any components inside App will have access to the Redux store.
 
-`// ./src/index.js`
-`import {Provider} from 'react-redux';`
+```
+// ./src/index.js
+import {Provider} from 'react-redux';
+```
 
 And then this is how we wrap our App component within Provider component.
 
