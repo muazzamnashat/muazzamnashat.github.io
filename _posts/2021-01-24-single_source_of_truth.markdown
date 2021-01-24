@@ -13,7 +13,7 @@ This is where *Redux* shines! It encourages a single source of truth by storing 
 Today, I'll walk you through on how to setup a Redux store in a React app. I'll assume you have already spinned up a react app with create-react-app. 
 
 
-1. First we need to import ‘’createStore” method from the Redux library.  Before that we can need to install two packages `redux` and `react-redux` by running 
+*  First we need to import ‘’createStore” method from the Redux library.  Before that we can need to install two packages `redux` and `react-redux` by running 
 `npm install redux && npm install react-redux`
 After the installation we can import createStore method from redux by
 
@@ -32,7 +32,7 @@ const store = createStore(countReducer);
 
 We’ll get back to the countReducer in a bit. 
 
-2.	Now we need the store to be available to the whole application. To do that, we’ll need to import Provider component from `react-redux` and the Provider component will wrap our top-level component which is usually App.js. Then, the App or any components inside App will have access to the Redux store.
+* 	Now we need the store to be available to the whole application. To do that, we’ll need to import Provider component from `react-redux` and the Provider component will wrap our top-level component which is usually App.js. Then, the App or any components inside App will have access to the Redux store.
 
 ```
 // ./src/index.js
@@ -49,7 +49,7 @@ And then this is how we wrap our App component within Provider component.
 
 These steps will be done inside our src/index.js . 
 
-3.	Now, to change the data in our store, we’ll need reducers. Reducers are simple JS functions that have a type and a payload. Type usually means the type of action we want to take, i.e., how we want to change our store. This can be “INCREASE_COUNT’’ which may mean that we are increasing the count in our redux store. Assuming the redux store has a count key.   And, the payload is the data that we want to add, delete or replace with in our store. A simple reducer can be like this.
+* 	Now, to change the data in our store, we’ll need reducers. Reducers are simple JS functions that have a type and a payload. Type usually means the type of action we want to take, i.e., how we want to change our store. This can be “INCREASE_COUNT’’ which may mean that we are increasing the count in our redux store. Assuming the redux store has a count key.   And, the payload is the data that we want to add, delete or replace with in our store. A simple reducer can be like this.
 
 ```
 // ./src/reducers/counterReducer.js
@@ -74,7 +74,7 @@ export default function counterReducer (
 
 Here when we pass an action with type 'INCREASE_COUNT', it will increase the count by 1 in our store. 
 
-4.	Now to change the data or access the data in our store, we’ll need to import connect provided by react-redux.
+* 	Now to change the data or access the data in our store, we’ll need to import connect provided by react-redux.
 
 ```
 // ./src/App.js
