@@ -13,7 +13,7 @@ This is where *Redux* shines! It encourages a single source of truth by storing 
 Today, I'll walk you through on how to setup a Redux store in a React app. I'll assume you have already spinned up a react app with create-react-app. 
 
 
-1.	First we need to import ‘’createStore” method from the Redux library.  Before that we can need to install two packages `redux` and `react-redux` by running 
+1. First we need to import ‘’createStore” method from the Redux library.  Before that we can need to install two packages `redux` and `react-redux` by running 
 `npm install redux && npm install react-redux`
 After the installation we can import createStore method from redux by
 
