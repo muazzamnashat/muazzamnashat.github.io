@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Database normalization and why we need it!"
-date:       2021-03-27 06:10:23 +0000
+date:       2021-03-27 02:10:24 -0400
 permalink:  database_normalization_and_why_we_need_it
 ---
 
